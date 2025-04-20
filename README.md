@@ -1,5 +1,8 @@
 # Federated-Learning-for-Critical-Electrical-Infrastructure-Maintenance
 
+Implementation of the paper "Federated Learning for Critical Electrical Infrastructure - Handling Non-IID Data for Predictive Maintenance of Substation Equipment" by Soham Ghosh and Gaurav Mittal.
+
+
 ├── federated_cb_maintenance \
 │   ├── __init__.py
 │   ├── client_app.py             # Defines your ClientApp \
