@@ -18,3 +18,10 @@ Substation Emergency Generator Maintenance Data (Excel file)
 
 
 3. Emergency Station Generator Maintenance Data (Excel file)
+
+Additional notes: 
+
+1. The 'Federated Learning for Breaker Main.ipynb' notebook uses the 'HV Circuit Breaker Maintenance Data' dataset and contains Python code for implementation of IID and non-IID comparisons, along with performance observations for FedAvg, FedProx, and FedBN.
+2. The 'Federated Learning for Breaker Advanced.ipynb' notebook uses the same 'HV Circuit Breaker Maintenance Data' dataset and contains additional Python code for implementation of non-IID data partitions  with performance comparison between FedAvg, FedAvg with Momentum, FedProx, and FedBN.
+
+
