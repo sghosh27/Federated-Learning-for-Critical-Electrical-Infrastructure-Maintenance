@@ -27,4 +27,4 @@ Additional notes:
 Disclaimer:
 The databases are provided "as is," without any express or implied warranties, including, but not limited to, implied warranties of merchantability, and fitness for a particular purpose. In no event shall we be liable for any direct, indirect, incidental, special, exemplary, or consequential damages, however caused and under any theory of liability, whether in contract, strict liability, tort (including negligence or otherwise), or otherwise, arising in any way out of the use of the database. By downloading, accessing, or using the database, you hereby release us from any and all liability that may arise from your use of the database. 
 
-This database is intended for educational and research purposes only and should not be used as a substitute for real-world electrical asset protection, operational decision-making, or maintenance planning.
+These databases are intended for educational and research purposes only and should not be used as a substitute for real-world electrical asset protection, operational decision-making, or maintenance planning.
