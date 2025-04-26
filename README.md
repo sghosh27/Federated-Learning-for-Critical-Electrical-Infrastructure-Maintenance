@@ -1,13 +1,20 @@
-# Federated-Learning-for-Critical-Electrical-Infrastructure-Maintenance
-
 Implementation of the paper "Federated Learning for Critical Electrical Infrastructure - Handling Non-IID Data for Predictive Maintenance of Substation Equipment" by Soham Ghosh and Gaurav Mittal.
 
+There are three datasets that are provided in this repository:
 
-├── federated_cb_maintenance \
-│   ├── __init__.py
-│   ├── client_app.py             # Defines your ClientApp \
-│   ├── server_app.py             # Defines your ServerApp \
-│   └── task.py                   # Defines your model, training and data loading \
-│   └── simulation_app.py         # Runs entire federated learning experiment in simulation mode \
-├── pyproject.toml                # Project metadata like dependencies and configs \
-└── README.md \
+1. HV Circuit Breaker Maintenance Data (Excel file)
+
+  - The dataset is derived from high-voltage breaker monitoring at utility substations, where sensors capture critical measurements such as SF6 density, breaker status, and ambient cabinet temperature.
+  - Utility engineers at participating utilities routinely review breaker records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as SF6 dew point, fault operation count, contact life, and days since last operation, in accordance with each utility’s established maintenance standards.
+  - The dataset comprises 5,000 samples of breaker readings, aggregated from five representative utilities. Each breaker is assigned a unique categorical identifier corresponding to its source utility, with 28 features representing various sensor-based measurements and one quality metric (0: no maintenance required, 1: maintenance required).
+  - It is important to note that not all 28 features are uniformly available across all product variants, leading to slight variations in the feature space between variants.
+  - To enhance the training of machine learning models, the dataset has been augmented with an increased proportion of negative examples to ensure sufficient representation of failure cases.
+
+2. Large Power Transformer Maintenance Data (Excel file)
+
+  - The dataset is similar to the HV Circuit Breaker Maintenance Data Set, and is derived from large power transformer monitoring at utility substations, where sensors capture critical measurements such as LTC and main tank oil temperature, dissolved gas values (in ppm).
+  - Utility engineers at participating utilities routinely review breaker records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as high oil temperature, and excessive amount of certain dissolved gas (usually based on Duval triangles and pentagons), in accordance with each utility’s established maintenance standards.
+Substation Emergency Generator Maintenance Data (Excel file)
+
+
+3. Emergency Station Generator Maintenance Data (Excel file)
