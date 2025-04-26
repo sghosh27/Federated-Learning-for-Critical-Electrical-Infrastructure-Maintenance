@@ -19,7 +19,7 @@ There are three datasets that are provided in this repository:
 3. Emergency Station Generator Maintenance Data (Excel file)
 
  -   The dataset is derived by combining results from station emergency generators at utility substations (~150 - 200 kVA on propane or natural gas), where sensors capture critical measurements such as engine temperatures, oil pressure, alternate current and voltages.
- Utility engineers at participating utilities routinely review station emergency generator records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as start attempts, battery state of charge, lube oil temperature, crankcase pressure, and emission levels, in accordance with each utility’s established maintenance standards.
+ -   Utility engineers at participating utilities routinely review station emergency generator records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as start attempts, battery state of charge, lube oil temperature, crankcase pressure, and emission levels, in accordance with each utility’s established maintenance standards.
 
 Additional notes: 
 
