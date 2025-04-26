@@ -24,4 +24,7 @@ Additional notes:
 1. The 'Federated Learning for Breaker Main.ipynb' notebook uses the 'HV Circuit Breaker Maintenance Data' dataset and contains Python code for implementation of IID and non-IID comparisons, along with performance observations for FedAvg, FedProx, and FedBN.
 2. The 'Federated Learning for Breaker Advanced.ipynb' notebook uses the same 'HV Circuit Breaker Maintenance Data' dataset and contains additional Python code for implementation of non-IID data partitions  with performance comparison between FedAvg, FedAvg with Momentum, FedProx, and FedBN.
 
+Disclaimer:
+The databases are provided "as is," without any express or implied warranties, including, but not limited to, implied warranties of merchantability, and fitness for a particular purpose. In no event shall we be liable for any direct, indirect, incidental, special, exemplary, or consequential damages, however caused and under any theory of liability, whether in contract, strict liability, tort (including negligence or otherwise), or otherwise, arising in any way out of the use of the database. By downloading, accessing, or using the database, you hereby release us from any and all liability that may arise from your use of the database. 
 
+This database is intended for educational and research purposes only and should not be used as a substitute for real-world electrical asset protection, operational decision-making, or maintenance planning.
