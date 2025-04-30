@@ -18,13 +18,28 @@ There are three datasets that are provided in this repository:
 
 3. Emergency Station Generator Maintenance Data (Excel file)
 
- -   The dataset is derived by combining results from station emergency generators at utility substations (~150 - 200 kVA on propane or natural gas), where sensors capture critical measurements such as engine temperatures, oil pressure, alternate current and voltages.
- -   Utility engineers at participating utilities routinely review station emergency generator records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as start attempts, battery state of charge, lube oil temperature, crankcase pressure, and emission levels, in accordance with each utility’s established maintenance standards.
+     -   The dataset is derived by combining results from station emergency generators at utility substations (~150 - 200 kVA on propane or natural gas), where sensors capture critical measurements such as engine temperatures, oil pressure, alternate current and voltages.
+     -   Utility engineers at participating utilities routinely review station emergency generator records and associated measurements for assets under their operational oversight and flag cases requiring maintenance. These inspection-driven flags are typically based on factors such as start attempts, battery state of charge, lube oil temperature, crankcase pressure, and emission levels, in accordance with each utility’s established maintenance standards.
 
 Additional notes: 
 
 1. The 'Federated Learning for Breaker Main.ipynb' notebook uses the 'HV Circuit Breaker Maintenance Data' dataset and contains Python code for the implementation of IID and non-IID comparisons, along with performance observations for FedAvg, FedProx, and FedBN.
 2. The 'Federated Learning for Breaker Advanced.ipynb' notebook uses the same 'HV Circuit Breaker Maintenance Data' dataset and contains additional Python code for the implementation of non-IID data partitions with performance comparison between FedAvg, FedAvg with Momentum, FedProx, and FedBN.
+3. Additional notebooks are provided to replicate the FL methodology for transformers and generators. These notebooks, 'Federated Learning for Transformer.ipynb' and 'Federated Learning for Generator.ipynb' should be used in conjunction with the datasets 'Large Power Transformer Maintenance Data' and 'Emergency Station Generator Maintenance Data'. 
+4. This project uses a requirements.txt file to manage Python dependencies. Follow the steps below to generate and install dependencies.
+    - ✅ Generate requirements.txt: This command saves the exact versions of installed packages so others can recreate the same environment. To create a list of all currently installed Python packages in your environment:
+    - 📥 Install from requirements.txt: This ensures your environment matches the one used for development or production. To install all required packages listed in the file
+```
+pip freeze > requirements.txt
+
+```
+
+
+```
+pip install -r requirements.txt
+
+```
+
 
 $\textcolor{red}{DISCLAIMER:}$
 The databases are provided "as is" without any express or implied warranties, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. In no event shall we be liable for any direct, indirect, incidental, special, exemplary, or consequential damages, however caused and under any theory of liability, whether in contract, strict liability, tort (including negligence or otherwise), or otherwise, arising in any way out of the use of the database. By downloading, accessing, or using the database, you hereby release us from any and all liability that may arise from your use of the database. 
