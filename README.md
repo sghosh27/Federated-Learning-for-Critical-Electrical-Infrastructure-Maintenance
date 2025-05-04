@@ -26,7 +26,7 @@ Additional notes:
 1. The 'Federated Learning for Breaker Main.ipynb' notebook uses the 'HV Circuit Breaker Maintenance Data' dataset and contains Python code for the implementation of IID and non-IID comparisons, along with performance observations for FedAvg, FedProx, and FedBN.
 2. The 'Federated Learning for Breaker Advanced.ipynb' notebook uses the same 'HV Circuit Breaker Maintenance Data' dataset and contains additional Python code for the implementation of non-IID data partitions with performance comparison between FedAvg, FedAvg with Momentum, FedProx, and FedBN.
 3. Additional notebooks are provided to replicate the FL methodology for transformers and generators. These notebooks, 'Federated Learning for Transformer.ipynb' and 'Federated Learning for Generator.ipynb' should be used in conjunction with the datasets 'Large Power Transformer Maintenance Data' and 'Emergency Station Generator Maintenance Data'. 
-4. This project uses a requirements.txt file to manage Python dependencies. Follow the steps below to generate and install dependencies.
+4. This project uses a requirements.txt file (see Notebook folder) to manage Python dependencies. Follow the steps below to generate and install dependencies.
     - ✅ Generate requirements.txt: This command saves the exact versions of installed packages so others can recreate the same environment. To create a list of all currently installed Python packages in your environment:
     - 📥 Install from requirements.txt: This ensures your environment matches the one used for development or production. To install all required packages listed in the file
 ```
