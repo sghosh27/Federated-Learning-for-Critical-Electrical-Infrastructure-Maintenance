@@ -6,15 +6,8 @@
 
 1. [Introduction](#introduction)
 2. [Datasets](#datasets)
-  - [HV Circuit Breaker Maintenance Data](#1-hv-circuit-breaker-maintenance-data)
-  - [Large Power Transformer Maintenance Data](#2-large-power-transformer-maintenance-data)
-  - [Emergency Station Generator Maintenance Data](#3-emergency-station-generator-maintenance-data)
 3. [Notebooks](#notebooks)
-  - [Federated_Learning_for_Breaker_Main.ipynb](#federated_learning_for_breaker_mainipynb)
-  - [Federated Learning for Breaker Advanced.ipynb](#federated-learning-for-breaker-advancedipynb)
-  - [Additional Notebooks](#additional-notebooks)
 4. [Running Jupyter Notebooks in Google Colab](#running-jupyter-notebooks-in-google-colab)
-  - [Running Federated_Learning_for_Breaker_Main.ipynb](#running-federated_learning_for_breaker_mainipynb)
 5. [Running Jupyter Notebooks in Other Environments](#running-jupyter-notebooks-in-other-environments)
 6. [Disclaimer](#disclaimer)
 
