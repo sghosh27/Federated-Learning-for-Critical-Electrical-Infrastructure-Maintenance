@@ -79,10 +79,12 @@ This repository contains the implementation of the paper **"Federated Learning f
   - Offers performance insights and observations for **FedAvg**, **FedProx**, and **FedBN** under IID partitioning scenarios.
   - Includes comparisons of Label Skew and Feature Skew for **FedAvg**, **FedProx**, and **FedBN** under non-IID partitioning conditions.
 
-2. **`Federated Learning for Breaker Advanced.ipynb`**:
-   - Uses the **HV_Circuit_Breaker_Maintenance_Data** dataset excel file.
-   - Contains additional Python code for the implementation of non-IID data partitions.
-   - Includes performance comparisons between FedAvg, FedAvg with Momentum, FedProx, and FedBN.
+2. **`Federated_Learning_for_Breaker_Advanced.ipynb`**:
+  - Leverages the **HV Circuit Breaker Maintenance Data** Excel file for comprehensive analysis.
+  - Compares **Training Accuracy** for Dirichlet Non-IID data partitions using the **FedAvg** and **FedAvg with Momentum** methods.
+  - Evaluates **Training Accuracy** for Feature Skew Non-IID data partitions using the **FedAvg** and **FedAvg with Momentum** methods.
+  - Provides detailed comparisons of Feature Skew performance across **FedAvg**, **FedAvg with Momentum**, **FedProx**, and **FedBN** under non-IID partitioning scenarios.
+
 
 3. **Additional Notebooks**:
    - **`Federated Learning for Transformer.ipynb`**: Uses the **Large Power Transformer Maintenance Data** dataset.
@@ -95,30 +97,34 @@ For seamless execution of the Jupyter notebooks, we recommend using the Google C
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sghosh27/Federated-Learning-for-Critical-Electrical-Infrastructure-Maintenance/)
 
-
-### Running **`Federated_Learning_for_Breaker_Main.ipynb`**
+### Steps to Run a Notebook
 
 1. **Open the Notebook**:  
-  Launch **`Federated_Learning_for_Breaker_Main.ipynb`** in the Google Colab environment.
+  Click on the desired notebook from the list provided and launch it in the Google Colab environment.
 
 2. **Upload Required Files**:  
   - Use the file upload option in Colab to upload the necessary files.  
   - Click the folder icon on the left sidebar to open the file explorer.  
-  - Use the upload button (shaped like a file with an upward arrow) to upload the following files from the GitHub repository:
-    - **`HV_Circuit_Breaker_Maintenance_Data.xlsx`** (located in the `Datasets` folder).
-    - **`breaker_functions.py`** (located in the `Notebooks` folder).
+  - Use the upload button (shaped like a file with an upward arrow) to upload the required data and function files.  
+  - Ensure all files are uploaded to the main directory where the notebook resides, as the code expects them in this location.
 
 3. **Install Dependencies**:  
-  - Run Step 1 in the notebook to install the required packages.  
-  - If prompted, restart the session after the installation completes.
+  - Run the first cell in the notebook to install the required packages.  
+  - If prompted, restart the runtime after the installation completes.
 
 4. **Execute the Notebook**:  
-  - Run the entire notebook or execute each cell sequentially to view the outputs and analyses.
+  - Run the cells sequentially to reproduce the results and analyses.  
+  - Alternatively, use the "Run All" option to execute the entire notebook at once.
 
-4. **Run the Notebook**:  
-  - Execute the cells in the notebook sequentially to reproduce the results and analyses.
+### Required Files for Each Notebook
 
+- **`Federated_Learning_for_Breaker_Main.ipynb`**:  
+  - **`HV_Circuit_Breaker_Maintenance_Data.xlsx`** (located in the `Datasets` folder).  
+  - **`breaker_functions.py`** (located in the `Notebooks` folder).
 
+- **`Federated_Learning_for_Breaker_Advanced.ipynb`**:  
+  - **`HV_Circuit_Breaker_Maintenance_Data.xlsx`** (located in the `Datasets` folder).  
+  - **`breaker_advanced_functions.py`** (located in the `Notebooks` folder).
 
 ## Running Jupyter Notebooks in Other Environments
 If you intend to run these notebooks in an environment other than Google Colab, you can utilize the `requirements.txt` file extracted from the Colab environment. This file provides a starting point with a list of necessary packages to set up your environment. However, we cannot guarantee that all packages and versions will be fully compatible across different environments. You may need to make adjustments and modifications to the package list and versions specified in the `requirements.txt` file. The file is provided strictly as a reference to assist in identifying the dependencies required to run these notebooks.
