@@ -120,11 +120,11 @@ For seamless execution of the Jupyter notebooks, we recommend using the Google C
 
 - **`Federated_Learning_for_Breaker_Main.ipynb`**:  
   - **`HV_Circuit_Breaker_Maintenance_Data.xlsx`** (located in the `Datasets` folder).  
-  - **`breaker_functions.py`** (located in the `Notebooks` folder).
+  - **`breaker_functions.py`** (located in the `Functions` folder).
 
 - **`Federated_Learning_for_Breaker_Advanced.ipynb`**:  
   - **`HV_Circuit_Breaker_Maintenance_Data.xlsx`** (located in the `Datasets` folder).  
-  - **`breaker_advanced_functions.py`** (located in the `Notebooks` folder).
+  - **`breaker_advanced_functions.py`** (located in the `Functions` folder).
 
 ## Running Jupyter Notebooks in Other Environments
 If you intend to run these notebooks in an environment other than Google Colab, you can utilize the `requirements.txt` file extracted from the Colab environment. This file provides a starting point with a list of necessary packages to set up your environment. However, we cannot guarantee that all packages and versions will be fully compatible across different environments. You may need to make adjustments and modifications to the package list and versions specified in the `requirements.txt` file. The file is provided strictly as a reference to assist in identifying the dependencies required to run these notebooks.
