@@ -182,7 +182,7 @@ def build_fedbn(input_spec):
     Returns:
         tff.learning.templates.IterativeProcess: Federated Batch Normalization process.
     """
-    return tff.learning.algorithms.build_weighted_fed_avg(
+    return tff.learning.algorithms.build_weighted_fed_bn(
         model_fn=lambda: tff.learning.models.from_keras_model(
             keras_model=model_fn(input_spec),
             input_spec=input_spec,
@@ -241,7 +241,7 @@ def train_process(algorithm, client_datasets, num_rounds=20):
     return acc_list
 
 
-def compare_algorithms(client_datasets, title):
+def compare_algorithms(client_datasets, title, num_rounds=20):
     """
     Compare the performance of FedAvg and FedAvg with Momentum.
 
@@ -259,8 +259,8 @@ def compare_algorithms(client_datasets, title):
     fedavg_momentum = build_fedavg(input_spec, momentum=0.9)
 
     # Train algorithms
-    acc_fedavg = train_process(fedavg, client_datasets)
-    acc_fedavg_momentum = train_process(fedavg_momentum, client_datasets)
+    acc_fedavg = train_process(fedavg, client_datasets, num_rounds)
+    acc_fedavg_momentum = train_process(fedavg_momentum, client_datasets, num_rounds)
 
     # Plot results
     rounds = list(range(1, len(acc_fedavg) + 1))
