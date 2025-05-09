@@ -184,6 +184,27 @@ def build_fedbn(input_spec):
     """
     return tff.learning.algorithms.build_weighted_fed_avg(
         model_fn=lambda: tff.learning.models.from_keras_model(
+            keras_model=model_fn(input_spec),
+            input_spec=input_spec,
+            loss=tf.keras.losses.BinaryCrossentropy(),
+            metrics=[tf.keras.metrics.BinaryAccuracy()]
+        ),
+        client_optimizer_fn=lambda: tf.keras.optimizers.SGD(learning_rate=0.02),
+        server_optimizer_fn=lambda: tf.keras.optimizers.SGD(learning_rate=1.0)
+    )
+
+def build_fedbn_with_batch_norm(input_spec):
+    """
+    Build the FedBN algorithm for federated learning with Batch Normalization kept local.
+
+    Args:
+        input_spec (tuple): Input specification for the model.
+
+    Returns:
+        tff.learning.templates.IterativeProcess: Federated Batch Normalization process with local BatchNorm.
+    """
+    return tff.learning.algorithms.build_weighted_fed_avg(
+        model_fn=lambda: tff.learning.models.from_keras_model(
             keras_model=model_fn_with_bn(input_spec),
             input_spec=input_spec,
             loss=tf.keras.losses.BinaryCrossentropy(),
@@ -272,7 +293,7 @@ def compare_all_algorithms(client_datasets, title, num_rounds=10):
     fedavg = build_fedavg(input_spec)
     fedavg_momentum = build_fedavg(input_spec, momentum=0.9)
     fedprox = build_fedprox(input_spec)
-    fedbn = build_fedbn(input_spec)
+    fedbn = build_fedbn_with_batch_norm(input_spec)
 
     # Train algorithms
     acc_fedavg = train_process(fedavg, client_datasets, num_rounds)
